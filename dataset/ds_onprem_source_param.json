@@ -1,0 +1,45 @@
+{
+	"name": "ds_onprem_source_param",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer_ls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"source_param": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": {
+					"value": "@dataset().source_param",
+					"type": "Expression"
+				},
+				"folderPath": "ADF_Project"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "airline_id",
+				"type": "String"
+			},
+			{
+				"name": "airline_name",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

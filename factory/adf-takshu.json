@@ -1,0 +1,15 @@
+{
+	"name": "adf-takshu",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "canadaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dd43f05f-2942-4040-a97b-d4197b8cef63",
+		"tenantId": "7f69ee0a-35fc-4769-bb17-44adf0cd6036"
+	}
+}

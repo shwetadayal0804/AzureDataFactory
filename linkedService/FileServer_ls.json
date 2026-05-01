@@ -1,0 +1,17 @@
+{
+	"name": "FileServer_ls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\ADF_Project",
+			"userId": "Shweta",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxY2RkY2ZlZS03ZjMyLTRkYjMtYjA4OS0zZDFjZmMyNmQwNjgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedirtakshu",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
